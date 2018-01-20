@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i);
+@import url("https://fonts.googleapis.com/css?family=Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 *,
 *:before,
 *:after {
@@ -14,7 +14,7 @@ body {
   background: #ffffff;
   color: #393939;
   font-size: 14px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-weight: 400;
   -moz-font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
@@ -58,9 +58,6 @@ input[type="submit"] {
 
 img {
   border: 0; }
-
-h1, h2, h3, h4, h5, h6 {
-  color: #393939; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
@@ -133,12 +130,6 @@ label {
   .icon-text.sm {
     margin-right: 4px; }
 
-.weight-200 {
-  font-weight: 200; }
-
-.weight-300 {
-  font-weight: 300; }
-
 .weight-400 {
   font-weight: 400; }
 
@@ -147,9 +138,6 @@ label {
 
 .weight-700 {
   font-weight: 700; }
-
-.weight-900 {
-  font-weight: 900; }
 
 .font-style-italic {
   font-style: italic; }
@@ -456,6 +444,54 @@ label {
   box-shadow: none;
   border: 1px solid #007a92 !important; }
 
+.header h1 {
+  margin: 0;
+  font-size: 35px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.section .sec-title {
+  width: 500px;
+  display: table;
+  margin: 0 auto; }
+  .section .sec-title .st-img {
+    width: 100px;
+    display: inline-block;
+    vertical-align: bottom; }
+  .section .sec-title .st-font {
+    display: inline-block;
+    padding-left: 20px; }
+    .section .sec-title .st-font h2 {
+      font-size: 35px;
+      margin-top: 0;
+      margin-bottom: 35px;
+      font-weight: 500; }
+.section .sec-sm-table .smt-title h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0; }
+.section .sec-sm-table .mytable {
+  width: 510px;
+  display: table;
+  margin: 0 auto; }
+  .section .sec-sm-table .mytable .column {
+    border-right: 1px solid #0060a0; }
+    .section .sec-sm-table .mytable .column:last-child {
+      border-right: none; }
+.section .btn-primary {
+  font-size: 20px;
+  font-weight: 500; }
+.section .sec-table .st-tittle {
+  font-weight: 700; }
+  .section .sec-table .st-tittle h3 {
+    font-weight: 600;
+    font-size: 30px; }
+    .section .sec-table .st-tittle h3 .st-btn {
+      font-size: 15px;
+      margin-left: 40px;
+      font-weight: 700; }
+
 .theme-ececec {
   color: #ececec !important; }
 
@@ -551,5 +587,23 @@ label {
 
 .theme-777777-bg {
   background-color: #777777 !important; }
+
+.theme-0060a0 {
+  color: #0060a0 !important; }
+
+.theme-0060a0-bg {
+  background-color: #0060a0 !important; }
+
+.theme-c1e6fb {
+  color: #c1e6fb !important; }
+
+.theme-c1e6fb-bg {
+  background-color: #c1e6fb !important; }
+
+.theme-e96624 {
+  color: #e96624 !important; }
+
+.theme-e96624-bg {
+  background-color: #e96624 !important; }
 
 /*# sourceMappingURL=style.css.map */
