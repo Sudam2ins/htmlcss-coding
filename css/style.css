@@ -442,7 +442,7 @@ label {
 
 .form-control:focus {
   box-shadow: none;
-  border: 1px solid #007a92 !important; }
+  border: 1px solid #0060a0 !important; }
 
 .header h1 {
   margin: 0;
@@ -692,101 +692,11 @@ path.cls-2,
 circle.cls-2 {
   fill: #0060a0 !important; }
 
-.theme-ececec {
-  color: #ececec !important; }
-
-.theme-ececec-bg {
-  background-color: #ececec !important; }
-
-.theme-838383 {
-  color: #838383 !important; }
-
-.theme-838383-bg {
-  background-color: #838383 !important; }
-
-.theme-ffffff {
-  color: #ffffff !important; }
-
 .theme-ffffff-bg {
   background-color: #ffffff !important; }
 
-.theme-007a92 {
-  color: #007a92 !important; }
-
-.theme-007a92-bg {
-  background-color: #007a92 !important; }
-
-.theme-d02720 {
-  color: #d02720 !important; }
-
-.theme-d02720-bg {
-  background-color: #d02720 !important; }
-
-.theme-393939 {
-  color: #393939 !important; }
-
-.theme-393939-bg {
-  background-color: #393939 !important; }
-
-.theme-e7e7e7 {
-  color: #e7e7e7 !important; }
-
-.theme-e7e7e7-bg {
-  background-color: #e7e7e7 !important; }
-
-.theme-9d9d9d {
-  color: #9d9d9d !important; }
-
-.theme-9d9d9d-bg {
-  background-color: #9d9d9d !important; }
-
-.theme-f5f5f5 {
-  color: #f5f5f5 !important; }
-
-.theme-f5f5f5-bg {
-  background-color: #f5f5f5 !important; }
-
-.theme-f7f7f7 {
-  color: #f7f7f7 !important; }
-
-.theme-f7f7f7-bg {
-  background-color: #f7f7f7 !important; }
-
-.theme-f9f9f9 {
-  color: #f9f9f9 !important; }
-
-.theme-f9f9f9-bg {
-  background-color: #f9f9f9 !important; }
-
-.theme-f4f4f4 {
-  color: #f4f4f4 !important; }
-
-.theme-f4f4f4-bg {
-  background-color: #f4f4f4 !important; }
-
-.theme-702d15 {
-  color: #702d15 !important; }
-
-.theme-702d15-bg {
-  background-color: #702d15 !important; }
-
-.theme-a0a0a0 {
-  color: #a0a0a0 !important; }
-
-.theme-a0a0a0-bg {
-  background-color: #a0a0a0 !important; }
-
-.theme-a7a7a7 {
-  color: #a7a7a7 !important; }
-
-.theme-a7a7a7-bg {
-  background-color: #a7a7a7 !important; }
-
-.theme-777777 {
-  color: #777777 !important; }
-
-.theme-777777-bg {
-  background-color: #777777 !important; }
+.theme-ffffff {
+  color: #ffffff !important; }
 
 .theme-0060a0 {
   color: #0060a0 !important; }
