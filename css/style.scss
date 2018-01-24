@@ -613,7 +613,7 @@ label{
 
 
 .section-table{
-
+	border:none; 
 	
 	.table{
 		width: 850px;
@@ -632,11 +632,11 @@ label{
 				font-weight: 700;
 				color: $theme-0060a0;
 				
-					
-					a{
-						width: 30px;
-						display: block;
-					}
+
+				a{
+					width: 30px;
+					display: block;
+				}
 				
 				td{
 					border: 1px solid $theme-0060a0;
@@ -764,7 +764,7 @@ label{
 
 		}
 		.table-cell{
-			//width: 50px;
+			
 			p{
 				font-size: 20px;
 				padding-left: 15px;

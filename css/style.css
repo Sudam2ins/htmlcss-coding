@@ -533,25 +533,27 @@ label {
         font-size: 20px;
         line-height: 1; }
 
-.section-table .table {
-  width: 850px;
-  margin: 0 auto;
-  text-align: left; }
-  .section-table .table th {
-    background-color: #0060a0;
-    color: #ffffff; }
-  .section-table .table tbody tr {
-    font-weight: 700;
-    color: #0060a0; }
-    .section-table .table tbody tr a {
-      width: 30px;
-      display: block; }
-    .section-table .table tbody tr td {
-      border: 1px solid #0060a0;
-      vertical-align: middle; }
-      .section-table .table tbody tr td .td-spain {
-        font-size: 12px;
-        padding-left: 20px; }
+.section-table {
+  border: none; }
+  .section-table .table {
+    width: 850px;
+    margin: 0 auto;
+    text-align: left; }
+    .section-table .table th {
+      background-color: #0060a0;
+      color: #ffffff; }
+    .section-table .table tbody tr {
+      font-weight: 700;
+      color: #0060a0; }
+      .section-table .table tbody tr a {
+        width: 30px;
+        display: block; }
+      .section-table .table tbody tr td {
+        border: 1px solid #0060a0;
+        vertical-align: middle; }
+        .section-table .table tbody tr td .td-spain {
+          font-size: 12px;
+          padding-left: 20px; }
 
 .sec-form {
   display: table;
