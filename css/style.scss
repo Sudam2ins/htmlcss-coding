@@ -505,12 +505,15 @@ label{
 	h2{
 		font-size:35px;
 		margin: 0;
-		text-align: center;
 		font-weight: 500;
-		padding-right: 30px;
+		vertical-align: middle;
+		
 		@media  (max-width:767px){
-			font-size: 20px;
-			margin-bottom: 25px;
+			font-size: 25px;
+			padding-right: 0;
+			display: block;
+			padding-bottom: 10px;
+			
 
 		}	
 	}
@@ -524,11 +527,13 @@ label{
 		line-height: 1.42857143;
 		margin-bottom: 0;
 		text-align: center;
-
 		vertical-align: middle;
+		
 		@media  (max-width:767px){
-			
-
+			display: block;
+			margin-left: 0px;
+			width: 200px;
+			margin: auto;
 		}
 	}
 }
@@ -552,11 +557,11 @@ label{
 	}
 }
 .svg-sec-title{
-	width: 500px;
+	
 	display: table;
 	margin: 0 auto;
 	@media  (max-width:767px){
-		width: 100%;
+		//width: 100%;
 	}
 	.st-img{
 		width: 100px;
@@ -607,7 +612,9 @@ label{
 				border-right: none;
 			}
 			@media  (max-width:767px){
-				width: 50%;
+				width: 172px;
+				display: table;
+				margin: 0 auto;
 				border-bottom: 1px solid $theme-0060a0;
 				&:nth-child(even){
 					border-right:none;
@@ -652,7 +659,7 @@ label{
 	.table{
 		width: 850px;
 		margin: 0 auto;
-		text-align: left;
+		text-align: center;
 		border-collapse: collapse;
 		th{
 			background-color: $theme-0060a0;
@@ -685,6 +692,7 @@ label{
 					padding: 8px;
 					line-height: 1.42857143;
 					border-spacing:10px;
+
 					.td-spain{
 						font-size: 12px;
 						padding-left: 20px;
@@ -706,8 +714,15 @@ label{
 		text-align: left;
 
 	}
-	.form-group{
+	.table-cell{
+		@media  (max-width:992px){
+			display: block !important;
 
+
+		}
+	}
+	.form-group{
+		
 		label{
 			font-size: 18px;
 			text-align: right;
@@ -716,6 +731,7 @@ label{
 			font-weight: 700;
 			width: 130px;
 			padding-right: 30px;
+			margin-top: 15px;
 
 			@media  (max-width:992px){
 				text-align: left;
@@ -731,29 +747,40 @@ label{
 			width: 350px;
 			height: 35px;
 			
-			margin-bottom: 15px;
+			margin-top: 15px;
 			border-radius: 10px;
-			display: inline-block;
+			//display: inline-block;
 
-			@media  (max-width:992px){
-				width: 600px;
-			
-			
+			@media  (max-width:767px){
+				width: 300px;
+				display: block;
+				margin-top: 10px;
+
+
 
 			}
 
 		}
 		.cal-form{
 			width: 120px;
+			display: inline-block;
+
+			@media  (max-width:992px){
+				width: 110px;
+				margin-bottom: 15px;
+			}
 			
 			
 		}
 		.dat-form{
-			width: 120px;
-			margin-right: 20px;
-			
-			@media  (max-width:767px){
+			width: 130px;
+			margin-right: 15px;
+			display: inline-block;
+			margin-top: 5px;
+			@media  (max-width:992px){
 				width: 100px;
+				margin-bottom: 5px;
+
 			}
 		}
 		.span-class{
@@ -765,12 +792,17 @@ label{
 		}
 		.df-span{
 			font-size: 15px;
-			text-align: right;
+			text-align: center;
 			color: $theme-0060a0;
 			text-transform: uppercase;
-			display: table;
-			margin: 0 auto;
+			display: block;
 			font-weight: 500;
+			@media  (max-width:767px){
+				text-align: center;
+				display: table;
+				margin-top: 15px;
+				
+			}
 		}
 		a{
 			font-size: 18px;
@@ -778,7 +810,7 @@ label{
 			border-radius: 10px;
 			border:1px solid $theme-0060a0;
 			padding: 3px 15px;
-			
+			clear: both;
 			text-decoration: none;
 
 			&:hover{
@@ -790,8 +822,9 @@ label{
 
 			}
 			@media  (max-width:992px){
-				width: 100%;
-				margin-top: 15px;
+				
+				//margin-top: 15px;
+				display: block;
 
 			}
 
@@ -799,8 +832,32 @@ label{
 
 	}
 }
+.table-row{
+	float: right;
+}
 .abc{
-	padding-left: 30px;
+	margin-left: 20px;
+	@media  (max-width:992px){
+		margin-left: 0;
+
+
+	}
+}
+.def{
+	width: 315px;
+	@media  (max-width:992px){
+		width: 260px;
+
+
+	}
+}
+.xyz{
+
+	@media  (max-width:992px){
+		width: 120px;
+		float: left;
+		//margin-bottom: 15px;
+	}
 }
 .btm-table{
 	.bc-val{
@@ -820,6 +877,9 @@ label{
 			width: 100%;
 
 		}
+		.bc-prop{
+			text-align: center;
+		}
 		.table-cell{
 			
 			p{
@@ -831,14 +891,19 @@ label{
 			}
 			span{
 				font-size: 14px;
+
 				
 			}
 			a{
 				width: 25px;
 				display: block;
-				
+				text-align: center;
+				margin: 0 auto;
 				text-decoration: none;
-
+				svg{
+					display: table;
+					margin: 0 auto;
+				}
 			}
 		}
 	}
@@ -891,10 +956,25 @@ circle.cls-2{
 	fill: #0060a0 !important;
 }
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		width: 1110px;
+	}
 }
 
 .theme-ffffff-bg{

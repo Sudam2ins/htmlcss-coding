@@ -459,13 +459,14 @@ label {
 .sec-title h2 {
   font-size: 35px;
   margin: 0;
-  text-align: center;
   font-weight: 500;
-  padding-right: 30px; }
+  vertical-align: middle; }
   @media (max-width: 767px) {
     .sec-title h2 {
-      font-size: 20px;
-      margin-bottom: 25px; } }
+      font-size: 25px;
+      padding-right: 0;
+      display: block;
+      padding-bottom: 10px; } }
 .sec-title a {
   font-size: 15px;
   margin-left: 40px;
@@ -477,6 +478,12 @@ label {
   margin-bottom: 0;
   text-align: center;
   vertical-align: middle; }
+  @media (max-width: 767px) {
+    .sec-title a {
+      display: block;
+      margin-left: 0px;
+      width: 200px;
+      margin: auto; } }
 
 .section-btn {
   text-align: center; }
@@ -494,12 +501,8 @@ label {
     border-radius: 10px; }
 
 .svg-sec-title {
-  width: 500px;
   display: table;
   margin: 0 auto; }
-  @media (max-width: 767px) {
-    .svg-sec-title {
-      width: 100%; } }
   .svg-sec-title .st-img {
     width: 100px;
     display: inline-block;
@@ -536,7 +539,9 @@ label {
       border-right: none; }
     @media (max-width: 767px) {
       .sec-small-table ul .column {
-        width: 50%;
+        width: 172px;
+        display: table;
+        margin: 0 auto;
         border-bottom: 1px solid #0060a0; }
         .sec-small-table ul .column:nth-child(even) {
           border-right: none; }
@@ -565,7 +570,7 @@ label {
   .section-table .table {
     width: 850px;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
     border-collapse: collapse; }
     .section-table .table th {
       background-color: #0060a0;
@@ -595,6 +600,9 @@ label {
   @media (max-width: 767px) {
     .sec-form {
       text-align: left; } }
+  @media (max-width: 992px) {
+    .sec-form .table-cell {
+      display: block !important; } }
   .sec-form .form-group label {
     font-size: 18px;
     text-align: right;
@@ -602,7 +610,8 @@ label {
     text-transform: uppercase;
     font-weight: 700;
     width: 130px;
-    padding-right: 30px; }
+    padding-right: 30px;
+    margin-top: 15px; }
     @media (max-width: 992px) {
       .sec-form .form-group label {
         text-align: left;
@@ -611,20 +620,29 @@ label {
     border: 1px solid #0060a0;
     width: 350px;
     height: 35px;
-    margin-bottom: 15px;
-    border-radius: 10px;
+    margin-top: 15px;
+    border-radius: 10px; }
+    @media (max-width: 767px) {
+      .sec-form .form-group .form-control {
+        width: 300px;
+        display: block;
+        margin-top: 10px; } }
+  .sec-form .form-group .cal-form {
+    width: 120px;
     display: inline-block; }
     @media (max-width: 992px) {
-      .sec-form .form-group .form-control {
-        width: 600px; } }
-  .sec-form .form-group .cal-form {
-    width: 120px; }
+      .sec-form .form-group .cal-form {
+        width: 110px;
+        margin-bottom: 15px; } }
   .sec-form .form-group .dat-form {
-    width: 120px;
-    margin-right: 20px; }
-    @media (max-width: 767px) {
+    width: 130px;
+    margin-right: 15px;
+    display: inline-block;
+    margin-top: 5px; }
+    @media (max-width: 992px) {
       .sec-form .form-group .dat-form {
-        width: 100px; } }
+        width: 100px;
+        margin-bottom: 5px; } }
   .sec-form .form-group .span-class {
     font-size: 15px;
     text-align: center;
@@ -633,18 +651,23 @@ label {
     margin: 0 10px; }
   .sec-form .form-group .df-span {
     font-size: 15px;
-    text-align: right;
+    text-align: center;
     color: #0060a0;
     text-transform: uppercase;
-    display: table;
-    margin: 0 auto;
+    display: block;
     font-weight: 500; }
+    @media (max-width: 767px) {
+      .sec-form .form-group .df-span {
+        text-align: center;
+        display: table;
+        margin-top: 15px; } }
   .sec-form .form-group a {
     font-size: 18px;
     font-weight: 500;
     border-radius: 10px;
     border: 1px solid #0060a0;
     padding: 3px 15px;
+    clear: both;
     text-decoration: none; }
     .sec-form .form-group a:hover {
       -webkit-transition: all 0.5s ease-out;
@@ -655,11 +678,27 @@ label {
       color: #ffffff; }
     @media (max-width: 992px) {
       .sec-form .form-group a {
-        width: 100%;
-        margin-top: 15px; } }
+        display: block; } }
+
+.table-row {
+  float: right; }
 
 .abc {
-  padding-left: 30px; }
+  margin-left: 20px; }
+  @media (max-width: 992px) {
+    .abc {
+      margin-left: 0; } }
+
+.def {
+  width: 315px; }
+  @media (max-width: 992px) {
+    .def {
+      width: 260px; } }
+
+@media (max-width: 992px) {
+  .xyz {
+    width: 120px;
+    float: left; } }
 
 .btm-table .bc-val {
   width: 300px; }
@@ -674,6 +713,8 @@ label {
   @media (max-width: 767px) {
     .btm-table .mytable {
       width: 100%; } }
+  .btm-table .mytable .bc-prop {
+    text-align: center; }
   .btm-table .mytable .table-cell p {
     font-size: 20px;
     padding-left: 15px; }
@@ -685,7 +726,12 @@ label {
   .btm-table .mytable .table-cell a {
     width: 25px;
     display: block;
+    text-align: center;
+    margin: 0 auto;
     text-decoration: none; }
+    .btm-table .mytable .table-cell a svg {
+      display: table;
+      margin: 0 auto; }
 
 .bottom-btn {
   text-align: center; }
@@ -747,6 +793,15 @@ circle.cls-2 {
   margin-right: auto;
   margin-left: auto; }
 
+@media (min-width: 768px) {
+  .container {
+    width: 750px; } }
+@media (min-width: 992px) {
+  .container {
+    width: 970px; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 1110px; } }
 .theme-ffffff-bg {
   background-color: #ffffff !important; }
 
