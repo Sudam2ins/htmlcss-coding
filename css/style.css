@@ -539,7 +539,7 @@ label {
       border-right: none; }
     @media (max-width: 767px) {
       .sec-small-table ul .column {
-        width: 172px;
+        width: 164px;
         display: table;
         margin: 0 auto;
         border-bottom: 1px solid #0060a0; }
